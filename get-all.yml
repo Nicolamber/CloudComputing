@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.198.50.207:8080
+functions:
+  get-all:
+    lang: node10-express
+    handler: ./get-all
+    image: nicolamber/get-all:v.1
+

@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.198.50.207:8080
+functions:
+  png:
+    lang: node10-express
+    handler: ./png
+    image: nicolamber/png:v.2
+

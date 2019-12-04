@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.198.50.207:8080
+functions:
+  pdf:
+    lang: node10-express
+    handler: ./pdf
+    image: nicolamber/pdf:v.4
